@@ -10,7 +10,7 @@ composer require borisnedovis/api-response
 
 And add provider in app.php:
 
-``` bash
+``` php
 BorisNedovis\ApiResponse\Providers\ApiResponseServiceProvider::class
 ```
 
@@ -18,8 +18,14 @@ Use:
 
 - Required parameter $data
 
-``` bash
+``` php
 return response()->api($this->data, $this->errors, $this->statusCode);
+```
+
+Result:
+
+``` json
+{"data":{...},"errors":[],"status":200}
 ```
 
 
