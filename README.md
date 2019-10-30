@@ -18,13 +18,13 @@ Use:
 
 - Required parameter $data
 
-``` php
+``` bash
 return response()->api($this->data, $this->errors, $this->statusCode);
 ```
 
 Result:
 
-``` json
+``` bash
 {"data":{...},"errors":[],"status":200}
 ```
 
